@@ -1,0 +1,39 @@
+Date : 04/07/2025
+Objet : Synthèse des apprentissages techniques réalisés
+1. Commandes Git:
+Au cours de cette période, j’ai étudié et pratiqué les principales commandes Git, un outil essentiel pour la gestion de versions dans les projets de développement. Parmi les commandes apprises :
+
+git init : initialiser un dépôt local.
+git clone : cloner un dépôt distant.
+git status : vérifier l’état du dépôt.
+git add : ajouter des fichiers à l’index.
+git commit : enregistrer des modifications.
+git push / git pull : envoyer/récupérer les modifications depuis un dépôt distant.
+Cette maîtrise me permet de collaborer efficacement dans un environnement de développement en équipe.
+la commande pour passer vers visual studio : "code .".
+
+2. Commandes Linux:
+J’ai appris les bases de l’environnement Linux et les commandes essentielles à la navigation et à la gestion des fichiers et dossiers :
+
+ls, cd, pwd : navigation dans l’arborescence.
+mkdir, rm, mv, cp : gestion des fichiers et répertoires.
+cat, nano, touch : lecture et édition de fichiers.
+chmod, chown : gestion des permissions.
+Ces connaissances renforcent mon autonomie dans un environnement de développement basé sur Linux.
+
+3. Langages HTML, CSS, JavaScript:
+J’ai acquis des compétences fondamentales dans les technologies du web :
+
+HTML : création de la structure d’une page web avec les balises de base (div, section, header, form, etc.)
+
+CSS : stylisation et mise en page (couleurs, marges, flexbox, grid, responsive design)
+
+JavaScript : interactions dynamiques sur le web (DOM, événements, conditions, boucles, fonctions de base)
+
+Je suis maintenant capable de concevoir une interface web simple et interactive.
+
+4. Recherche avancée sur le langage Java
+J’ai approfondi mes connaissances en Java, un langage de programmation orienté objet. La recherche a porté sur les plusieurs éléments comme :
+Syntaxe de base : types, boucles, conditions, méthodes.
+Cette recherche m’a permis de mieux comprendre la structure et la puissance de Java dans des projets logiciels complexes.
+
