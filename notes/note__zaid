@@ -1,0 +1,10 @@
+11/07/20225
+Les commandes git:
+git add:ajouter des fichiers a la zone de staging 
+git pull:recupére modification depuis un depot distant
+git push:envoie les commits locaux vers un depot distant
+git status:affiche l'etat des fichiers
+git clone:copie un depot distant sur votre machine locale
+git commit:enregitre les modification mises en staging avec un message descriptif 
+git init: initialise un nouveau depot Git dans un repertoire
+git remote:Gere les depots distants 
