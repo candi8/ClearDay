@@ -1,0 +1,23 @@
+1- separation of concern : 
+ => index.html
+ => style.css
+ => script.js
+
+2- css trageting  :
+  id 
+  name 
+  selector
+
+3- maquettage :
+  header
+  main
+  footer
+    => données en dure dans le html
+
+4- html <=> js
+   => données en dure dans le js
+5- js <=> backend : 
+    => données en dure dans le backend 
+    - introduction java 
+    maven 
+    build....
