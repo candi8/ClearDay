@@ -3,16 +3,19 @@ body {
     background-color: lightblue;
 }
 
-.main {
+.mainSection {
     display: flex;
     justify-content: space-between;
+    border-radius: 15px;
 }
 
 .task, .calendar {
     width: 45%;
     border: 1px solid black;
     padding: 10px;
-    background-color: white; /* make sections stand out */
+    background-color: white; 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .items {
@@ -28,15 +31,59 @@ button {
 table {
     width: 100%;
     border-collapse: collapse;
+    
 }
-
 th, td {
     border: 1px solid black;
     text-align: center;
     padding: 5px;
     background-color: white;
+    
 }
 
+
+
+
 tr{
-    background-color: #f0f8ff; /* light bluish for even rows */
+    background-color: #f0f8ff; 
+    border: 2px solid black;  
+    border-spacing: 5px;
+        
+}
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+header {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    position: bottom;
+
+    
+}
+p {
+    margin: 0;
+    padding: 10px;
+    position: bottom;
 }
