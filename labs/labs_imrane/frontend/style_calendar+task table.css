@@ -1,0 +1,42 @@
+body {
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task, .calendar {
+    width: 45%;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white; /* make sections stand out */
+}
+
+.items {
+    border: 1px solid grey;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+button {
+    margin-left: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+}
+
+tr{
+    background-color: #f0f8ff; /* light bluish for even rows */
+}
