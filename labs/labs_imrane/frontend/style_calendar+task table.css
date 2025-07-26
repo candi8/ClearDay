@@ -79,14 +79,17 @@ footer {
     color: white;
     text-align: center;
     position: bottom;
-    margin-top: 90px;
+    margin-top: 200px;
     padding: 10px;
     border-radius: 10px;
-    width: 100%;
+    width: 90%;
     height: 50px;
-    position: fixed;
+    position:fixed;
+    margin-left: 70px;
+   
     font-size: 30px;
     font-weight: bold;
+    
 
     
 }
@@ -94,4 +97,5 @@ p {
     margin: 0;
     padding: 10px;
     position: bottom;
+    
 }
