@@ -1,4 +1,4 @@
-* {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -6,13 +6,10 @@
         }
         
         body {
-            background: linear-gradient(135deg, #6e8efb, #a777e3);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 50vh;
-            padding: 20px;
-        }
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background: linear-gradient(to right, #c1d3fe, #e1e1fd);
+       }
         
         .container {
             width: 100%;
@@ -24,17 +21,13 @@
             overflow: hidden;
             height: 700px;
             margin-top: 90px;
-        }
+            justify-content: space-between;
+            display: flex;
+       }
         
-        head {
-            background: #2196F3;
-            color: white;
-            padding: 25px 30px;
-            text-align: center;
-            position: relative;
-        }
         
-         h1 {
+        
+         h2 {
             font-size: 2.5rem;
             font-weight: 600;
             margin-bottom: 5px;
@@ -52,10 +45,6 @@
             border-right: 2px solid #e0e0e0;
         }
         
-
-        .todo-list {
-            margin-bottom: 30px;
-        }
         
         .todo-card{
             background: white;
@@ -68,17 +57,43 @@
             align-items: center;
             transition: transform 0.3s, box-shadow 0.3s;
         }
-        .todo-text {
-            flex-grow: 1;
-            font-size: 1.1rem;
-            padding: 0 15px;
-        }
-    header{
-            font-size: 2.5rem;
-            font-weight: 600;
-            margin-bottom: 5px;
-            letter-spacing: 1px;
-            place-content: center;
-    }
         
-     
+      .header {
+        text-align: center;
+           padding: 30px;
+           font-size: 2rem;
+           font-weight: bold;
+    }
+     .calendar {
+          width: 45%;
+        border: 1px solid black;
+         padding: 10px;
+         background-color: white; 
+        border-radius: 15px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     }
+     .todo-section, .calendar {
+    width: 45%;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white; 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+    
+}
+tr {
+    background-color: #f0f8ff; 
+    border: 2px solid black;  
+    border-spacing: 5px;
+}
