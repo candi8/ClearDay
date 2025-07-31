@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo + Calendrier</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 40px 0;
+    }
+    .container {
+      display: flex;
+      border: 2px dashed #6ac5fc;
+      border-radius: 16px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      min-height: 500px;
+      background: #fff;
+    }
+    .todo-panel {
+      width: 40%;
+      border-right: 2px dashed #6ac5fc;
+      padding: 16px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    .todo {
+      background: #fff;
+      border: 2px solid #333;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 18px;
+      min-width: 240px;
+      margin-bottom: 8px;
+      font-size: 1rem;
+      box-shadow: 0 1px 2px #0001;
+      /* Effet au survol */
+      transition: box-shadow 0.2s;
+    }
+    .todo span { flex: 1; }
+    .date {
+      margin-left: 12px;
+      font-size: 0.95em;
+      color: #555;
+    }
+    .delete-btn {
+      background: none;
+      border: none;
+      color: #333;
+      font-size: 1.1em;
+      cursor: pointer;
+      margin-left: 8px;
+    }
+    .add-todo {
+      background: #c6f5d4;
+      border: 2px solid #77db91;
+      border-radius: 12px;
+      padding: 12px 0;
+      min-width: 240px;
+      text-align: center;
+      font-size: 1.2em;
+      cursor: pointer;
+      margin-top: 12px;
+      margin-bottom: 8px;
+    }
+    .calendar-panel {
+      flex: 1;
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .calendar-mockup {
+      width: 100%;
+      height: 350px;
+      background: #222426;
+      border-radius: 10px;
+      border: 1px solid #aaa;
+      color: #eee;
+      padding: 18px 0 0 0;
+      text-align: center;
+    }
+    /* Texte en haut du calendrier (pure déco) */
+    .calendar-mockup:before {
+      content: "Calendrier (maquette)";
+      display: block;
+      color: #aebfd1;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      letter-spacing: 0.2em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Colonne de gauche : tâches à faire -->
+    <div class="todo-panel" id="todoPanel">
+      <!-- Les tâches seront affichées ici par JavaScript -->
+    </div>
+    <!-- Colonne de droite : calendrier décoratif -->
+    <div class="calendar-panel">
+      <div class="calendar-mockup"></div>
+    </div>
+  </div>
+
+  <script>
+    // Quelques exemples de tâches déjà présentes
+    let taches = [
+      { texte: "Todo 1", date: "12/01/2025 08:00" },
+      { texte: "Todo 2", date: "12/01/2025 08:00" },
+      { texte: "Todo 3", date: "12/01/2025 08:00" }
+    ];
+
+    // Affiche toutes les tâches à l'écran
+    function afficherTaches() {
+      const panneau = document.getElementById('todoPanel');
+      panneau.innerHTML = ''; // Efface tout avant d'ajouter
+
+      // Pour chaque tâche, on crée du HTML
+      taches.forEach((tache, index) => {
+        const div = document.createElement('div');
+        div.className = 'todo';
+        // On affiche le texte, la date, bouton supprimer
+        div.innerHTML = `
+          <span>${tache.texte}</span>
+          <span class="date">${tache.date}</span>
+          <button class="delete-btn" onclick="supprimerTache(${index})" title="Effacer">&#128465;</button>
+        `;
+        panneau.appendChild(div);
+      });
+
+      // Bouton pour ajouter une nouvelle tâche
+      const boutonAjouter = document.createElement('div');
+      boutonAjouter.className = 'add-todo';
+      boutonAjouter.textContent = '+';
+      boutonAjouter.onclick = ajouterTache;
+      panneau.appendChild(boutonAjouter);
+    }
+
+    // Permet à l'utilisateur d'ajouter une nouvelle tâche
+    function ajouterTache() {
+      const texte = prompt("Nouvelle tâche :");
+      const date = prompt("Date (JJ/MM/AAAA HH:MM) :", "12/01/2025 09:00");
+      if (texte && date) {
+        taches.push({ texte, date });
+        afficherTaches();
+      }
+    }
+
+    // Supprime une tâche (après confirmation)
+    function supprimerTache(index) {
+      if (confirm("Supprimer cette tâche ?")) {
+        taches.splice(index, 1);
+        afficherTaches();
+      }
+    }
+
+    // Affiche au chargement de la page
+    afficherTaches();
+  </script>
+</body>
+</html>
+
+  <title>Calendrier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calendar">
+    <div class="calendar-header">
+      <button class="prev-month">&#10094;</button>
+      <span class="month-year"></span>
+      <button class="next-month">&#10095;</button>
+    </div>
+    <div class="calendar-body">
+      <div class="calendar-days">
+        <div>Dim</div>
+        <div>Lun</div>
+        <div>Mar</div>
+        <div>Mer</div>
+        <div>Jeu</div>
+        <div>Ven</div>
+        <div>Sam</div>
+      </div>
+      <div class="calendar-dates">
+        <!-- Les dates seront ajoutées ici dynamiquement -->
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
