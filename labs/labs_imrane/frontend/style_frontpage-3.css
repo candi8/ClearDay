@@ -1,0 +1,135 @@
+button {
+    margin-left: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+hr {
+    width: 80%;
+    margin: 10px auto;
+    border: none;
+    border-top: 1px solid #b0b0b0;
+}
+
+.Todo-Tasks-list {
+    width: 45%;
+    margin: 40px auto;
+    background-color: #1e3a8a; /* deep indigo */
+    padding: 40px;
+    padding-bottom: 60px;
+    border: 1px solid #14b8a6; /* teal */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    color: black;
+}
+
+b {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fef9ef;
+}
+
+strong {
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: #3b82f6; /* vivid blue */
+    color: #f1f5f9;
+    width: 60%;
+    margin-left: 340px;
+    border-radius: 9px;
+}
+
+#Todos {
+    padding-top: 10px;
+}
+
+.todo {
+    width: 100%;
+    font-size: 20px;
+    background-color: #f8fafc; /* soft light */
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #d1d5db;
+}
+
+.todo:hover {
+    background-color: #dbeafe; /* smooth light blue */
+    transition: background-color 0.3s ease;
+}
+
+.Add {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-button {
+    padding: 10px 20px;
+    background-color: #10b981; /* emerald */
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.add-button:hover {
+    background-color: #22d3ee; /* aqua hover */
+    transition: background-color 0.3s ease;
+}
+
+body {
+    background-color: #f0f9ff; /* ultra light cyan */
+}
+
+th, td {
+    border: 2px solid white;
+    background: #3b82f6; /* vivid blue */
+    text-align: center;
+    color: white;
+    border-collapse: separate;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+table {
+    border: 2px solid #0ea5e9; /* cyan */
+    border-end-end-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 90%;
+    height: 200px;
+    margin-left: 50px;
+    box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #4f46e5; /* indigo */
+    padding: 20px;
+    margin-top: 35px;
+    width: 45%;
+    margin-left: 420px;
+    border-radius: 10px;
+    box-shadow: 1px 2px black;
+    cursor: pointer;
+}
+
+.footer-content {
+    color: #e2e8f0; /* soft gray */
+    text-align: center;
+    margin: 0;
+    font-size: large;
+}
+
+footer:hover {
+    background-color: #6366f1; /* lighter indigo */
+    color: #f8fafc;
+    transition: background-color 0.3s ease;
+}
