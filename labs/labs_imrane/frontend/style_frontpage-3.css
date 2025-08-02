@@ -14,10 +14,10 @@ hr {
 .Todo-Tasks-list {
     width: 45%;
     margin: 40px auto;
-    background-color: #1e3a8a; /* deep indigo */
+    background-color: #1e3a8a; 
     padding: 40px;
     padding-bottom: 60px;
-    border: 1px solid #14b8a6; /* teal */
+    border: 1px solid #14b8a6; 
     border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     color: black;
@@ -35,7 +35,7 @@ strong {
     font-size: 36px;
     margin-top: 30px;
     margin-bottom: 10px;
-    background-color: #3b82f6; /* vivid blue */
+    background-color: #3b82f6; 
     color: #f1f5f9;
     width: 60%;
     margin-left: 340px;
@@ -49,7 +49,7 @@ strong {
 .todo {
     width: 100%;
     font-size: 20px;
-    background-color: #f8fafc; /* soft light */
+    background-color: #f8fafc; 
     padding: 10px 15px;
     margin-bottom: 10px;
     border-radius: 8px;
@@ -60,7 +60,7 @@ strong {
 }
 
 .todo:hover {
-    background-color: #dbeafe; /* smooth light blue */
+    background-color: #1d4881; 
     transition: background-color 0.3s ease;
 }
 
@@ -71,7 +71,7 @@ strong {
 
 .add-button {
     padding: 10px 20px;
-    background-color: #10b981; /* emerald */
+    background-color: #10b981; 
     border: none;
     color: white;
     border-radius: 8px;
@@ -79,17 +79,17 @@ strong {
 }
 
 .add-button:hover {
-    background-color: #22d3ee; /* aqua hover */
+    background-color: #22d3ee; 
     transition: background-color 0.3s ease;
 }
 
 body {
-    background-color: #f0f9ff; /* ultra light cyan */
+    background-color: #95bcd8; 
 }
 
-th, td {
+td {
     border: 2px solid white;
-    background: #3b82f6; /* vivid blue */
+    background: #3b82f6; 
     text-align: center;
     color: white;
     border-collapse: separate;
@@ -99,7 +99,7 @@ th, td {
 }
 
 table {
-    border: 2px solid #0ea5e9; /* cyan */
+    border: 2px solid #0ea5e9; 
     border-end-end-radius: 10px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
@@ -111,7 +111,7 @@ table {
 }
 
 footer {
-    background-color: #4f46e5; /* indigo */
+    background-color: #4f46e5; 
     padding: 20px;
     margin-top: 35px;
     width: 45%;
@@ -122,14 +122,24 @@ footer {
 }
 
 .footer-content {
-    color: #e2e8f0; /* soft gray */
+    color: #e2e8f0; 
     text-align: center;
     margin: 0;
     font-size: large;
 }
 
 footer:hover {
-    background-color: #6366f1; /* lighter indigo */
+    background-color: #6366f1; 
     color: #f8fafc;
     transition: background-color 0.3s ease;
+}
+th{
+    border: 2px solid black;
+    background: white; 
+    text-align: center;
+    color: rgb(57, 147, 183);
+    border-collapse: separate;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
 }
