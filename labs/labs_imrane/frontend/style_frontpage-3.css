@@ -11,7 +11,7 @@ hr {
     border-top: 1px solid #b0b0b0;
 }
 
-.Todo-Tasks-list {
+.TodoTaskslist {
     width: 45%;
     margin: 40px auto;
     background-color: #b269ae; 
@@ -69,7 +69,7 @@ strong {
     margin-top: 20px;
 }
 
-.add-button {
+.addbutton {
     padding: 10px 20px;
     background-color:#1d4881; 
     border: none;
@@ -78,7 +78,7 @@ strong {
     font-size: 16px;
 }
 
-.add-button:hover {
+.addbutton:hover {
     background-color: #22d3ee; 
     transition: background-color 0.3s ease;
 }
@@ -121,7 +121,7 @@ footer {
     cursor: pointer;
 }
 
-.footer-content {
+.footercontent {
     color: #e2e8f0; 
     text-align: center;
     margin: 0;
